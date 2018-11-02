@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="stamaskstr",
-    version="0.0.1",
+    version="0.0.2",
     author="Marco Ostaska",
     author_email="marcoan@ymail.com",
     description="string masking",

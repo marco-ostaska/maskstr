@@ -1,9 +1,7 @@
-name="stamaskstr"
-
-import uuid, hashlib, base64, string, random
-
-def uid():
-    return "".join([chr(int(i)+64) if int(i) % 2 else chr(int(i)+96) for i in list(str(uuid.getnode()))])
+import hashlib
+import base64
+import string
+import random
 
 def Hash(clean):
     """
@@ -28,7 +26,6 @@ def mask(mk):
         msk.append("".join(ch[::-1]))
     
     msk.append(chr(len(mk)+96))
-    msk.append(uid())
     return base64.urlsafe_b64encode("".join(msk).encode()).decode()
 
 def masked(mk, hsh):
@@ -36,12 +33,11 @@ def masked(mk, hsh):
     Get the masked string and hash and unmask it
     """
     base=base64.urlsafe_b64decode(mk.encode()).decode()
-    if base[-len(uid()):] == uid():
-        N = (ord(base[:-len(uid())][-1:])-96)
-        msk=[base[i:i+N] for i in range(0, len(base[:-len(uid())]), N)]
-        umsk=[]
-        for i in range(len(msk)-1):
-            umsk.append(msk[i][::-1][i])
+    N = (ord(base[-1:])-96)
+    msk=[base[i:i+N] for i in range(0, len(base), N)]
+    umsk=[]
+    for i in range(len(msk)-1):
+        umsk.append(msk[i][::-1][i])
     if Hash("".join(umsk)) == hsh:
         return "".join(umsk)
     return False
@@ -57,3 +53,4 @@ def simplemkd(smk):
     unmask string masked by simplem
     """
     return base64.urlsafe_b64decode(smk.encode()).decode()[::-1]
+
