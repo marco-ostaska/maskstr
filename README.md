@@ -12,7 +12,11 @@ Uses a `clean` string and `hash` (generated using `Hash` function) as arguments 
 
 Uses a `clean` string as argument and mask it
 
-## masked(mk, hsh):
+## masked(mk):
+
+Uses a `masked` as arguments and unmask it
+
+## maskedh(mk, hsh):
 
 Uses a `masked` string and `hash` (generated using `Hash` function) as arguments and unmask it
 

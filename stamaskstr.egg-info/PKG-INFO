@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: stamaskstr
-Version: 0.0.2
+Version: 0.0.4
 Summary: string masking
 Home-page: https://github.com/sta-br/stamaskstr
 Author: Marco Ostaska
@@ -20,7 +20,11 @@ Description: # stamaskstr
         
         Uses a `clean` string as argument and mask it
         
-        ## masked(mk, hsh):
+        ## masked(mk):
+        
+        Uses a `masked` as arguments and unmask it
+        
+        ## maskedh(mk, hsh):
         
         Uses a `masked` string and `hash` (generated using `Hash` function) as arguments and unmask it
         
