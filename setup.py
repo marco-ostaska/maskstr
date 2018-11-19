@@ -5,13 +5,13 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="stamaskstr",
-    version="0.0.6",
+    version="0.0.1",
     author="Marco Ostaska",
     author_email="marcoan@ymail.com",
     description="string masking",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/sta-br/stamaskstr",
+    url="https://github.com/marco-ostaska/stamaskstr",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3.7",
