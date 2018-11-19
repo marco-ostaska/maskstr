@@ -1,12 +1,12 @@
 Metadata-Version: 2.1
-Name: stamaskstr
+Name: maskstr
 Version: 0.0.1
 Summary: string masking
 Home-page: https://github.com/marco-ostaska/stamaskstr
 Author: Marco Ostaska
 Author-email: marcoan@ymail.com
 License: UNKNOWN
-Description: # stamaskstr
+Description: # maskstr
         
         ## Hash
         

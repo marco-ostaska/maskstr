@@ -1,7 +1,0 @@
-README.md
-setup.py
-stamaskstr/__init__.py
-stamaskstr.egg-info/PKG-INFO
-stamaskstr.egg-info/SOURCES.txt
-stamaskstr.egg-info/dependency_links.txt
-stamaskstr.egg-info/top_level.txt

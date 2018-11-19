@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="stamaskstr",
+    name="maskstr",
     version="0.0.1",
     author="Marco Ostaska",
     author_email="marcoan@ymail.com",

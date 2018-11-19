@@ -1,4 +1,4 @@
-# stamaskstr
+# maskstr
 
 ## Hash
 
